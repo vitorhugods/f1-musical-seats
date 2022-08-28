@@ -3,7 +3,7 @@ name: "Publish Server Image"
 on:
   create:
     tags:
-      - *
+      - '*'
 
 jobs:
   gradle-run-tests:
