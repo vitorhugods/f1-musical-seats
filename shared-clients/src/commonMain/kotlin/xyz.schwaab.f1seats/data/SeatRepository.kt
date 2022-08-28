@@ -17,7 +17,7 @@ class SeatRepository (engine: HttpClientEngine = provideEngine()) {
             json(Json)
         }
         defaultRequest {
-            host = "127.0.0.1"
+            host = SERVICE_URL
             port = 8088
         }
     }
@@ -25,5 +25,6 @@ class SeatRepository (engine: HttpClientEngine = provideEngine()) {
     suspend fun fetchConfirmedDrivers(): List<TeamDrivers> {
         return httpClient.get("/confirmed-drivers").body()
     }
-
 }
+
+val SERVICE_URL = "https://f1seats.schwaab.xyz"
