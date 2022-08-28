@@ -1,9 +1,9 @@
 name: "Publish Server Image"
 
 on:
-  create:
+  push:
     tags:
-      - *
+      - '*'
 
 jobs:
   gradle-run-tests:
