@@ -11,7 +11,7 @@ import kotlinx.serialization.json.Json
 import org.slf4j.event.Level
 import xyz.schwaab.f1seats.server.confirmed.confirmedDriversRouting
 
-const val HOST = "127.0.0.1"
+const val HOST = "localhost"
 const val PORT = 8088
 const val URL = "$HOST:$PORT"
 
