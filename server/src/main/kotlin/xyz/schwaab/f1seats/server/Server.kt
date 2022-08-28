@@ -13,7 +13,6 @@ import xyz.schwaab.f1seats.server.confirmed.confirmedDriversRouting
 
 const val HOST = "0.0.0.0"
 const val PORT = 8088
-const val URL = "$HOST:$PORT"
 
 fun main() {
     embeddedServer(Netty, port = PORT, host = HOST) {
