@@ -16,12 +16,6 @@ fun Application.confirmedDriversRouting() = apply {
 
         static(BASE_ASSETS_PATH) {
             resources(".")
-//            static("driver") {
-//                resources("driver")
-//            }
-//            static("team") {
-//                resources("team")
-//            }
         }
     }
 }
