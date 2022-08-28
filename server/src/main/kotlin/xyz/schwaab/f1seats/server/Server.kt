@@ -1,6 +1,5 @@
 package xyz.schwaab.f1seats.server
 
-import io.ktor.http.*
 import io.ktor.serialization.kotlinx.json.*
 import io.ktor.server.application.*
 import io.ktor.server.engine.*
@@ -22,8 +21,7 @@ fun main() {
             level = Level.DEBUG
         }
         install(CORS) {
-            allowHost("localhost:8080")
-            allowHeader(HttpHeaders.ContentType)
+            anyHost()
         }
         install(ContentNegotiation) {
             json(Json {
