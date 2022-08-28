@@ -18,6 +18,7 @@ repositories {
 dependencies {
     testImplementation(kotlin("test"))
     implementation(project(":shared"))
+    implementation(libs.logback)
     implementation(libs.ktor.server.netty)
     implementation(libs.ktor.server.logging)
     implementation(libs.ktor.server.cors)

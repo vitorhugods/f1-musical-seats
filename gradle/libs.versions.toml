@@ -7,6 +7,7 @@ coroutines = "1.6.4"
 coroutines-native-adapter = "0.12.6-new-mm"
 # Networking
 ktor = "2.1.0"
+logback = "1.2.11"
 html-jvm = "0.7.5"
 kotlinx-serialization = "1.4.0"
 # Android
@@ -22,6 +23,7 @@ compose-jb-plugin = { module = "org.jetbrains.compose:compose-gradle-plugin", ve
 
 coroutines = { module = "org.jetbrains.kotlinx:kotlinx-coroutines-core", version.ref = "coroutines"}
 
+logback = { module = "ch.qos.logback:logback-classic", version.ref = "logback" }
 # Ktor
 ktor-server-netty = { module = "io.ktor:ktor-server-netty", version.ref = "ktor" }
 ktor-server-cors = { module = "io.ktor:ktor-server-cors", version.ref = "ktor" }
