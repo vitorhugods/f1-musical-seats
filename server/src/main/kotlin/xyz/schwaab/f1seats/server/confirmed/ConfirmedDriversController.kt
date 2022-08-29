@@ -4,10 +4,10 @@ import xyz.schwaab.f1seats.dto.Driver
 import xyz.schwaab.f1seats.dto.Team
 import xyz.schwaab.f1seats.dto.TeamDrivers
 
-class ConfirmedDriversController(currentHost: String) {
+class ConfirmedDriversController(baseUrl: String) {
 
-    private val baseDriversPath = "$currentHost/assets/driver/"
-    private val baseTeamPath = "$currentHost/assets/team/"
+    private val baseDriversPath = "$baseUrl/assets/driver/"
+    private val baseTeamPath = "$baseUrl/assets/team/"
 
     fun getConfirmedDrivers(): List<TeamDrivers> = listOf(
         TeamDrivers(
