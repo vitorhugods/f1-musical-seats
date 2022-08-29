@@ -67,6 +67,11 @@ private fun TeamInfo(team: Team) {
             display(DisplayStyle.InlineBlock)
         }
     }) {
+        Div({style {
+            height(50.px)
+            width(10.px)
+            backgroundColor(Color("#${team.mainColorRGB}"))
+        }})
         Span() {
             Text(team.name)
         }
