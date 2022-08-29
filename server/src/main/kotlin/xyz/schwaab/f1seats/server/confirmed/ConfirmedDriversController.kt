@@ -37,19 +37,6 @@ class ConfirmedDriversController(baseUrl: String) {
             )
         ),
         TeamDrivers(
-            Team(name = "Red Bull Racing", mainColorRGB = "3671c6", logoUrl = teamPicture("rbr.png")),
-            listOf(
-                Driver(
-                    name = "Max Verstappen",
-                    photoUrl = driverPicture("verstappen.png")
-                ),
-                Driver(
-                    name = "Sergio Perez",
-                    photoUrl = driverPicture("perez.png")
-                )
-            )
-        ),
-        TeamDrivers(
             Team(name = "Mercedes", mainColorRGB = "6cd3bf", logoUrl = teamPicture("mercedes.png")),
             listOf(
                 Driver(
