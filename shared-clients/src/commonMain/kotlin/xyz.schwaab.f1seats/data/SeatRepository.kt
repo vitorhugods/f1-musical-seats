@@ -17,8 +17,7 @@ class SeatRepository (engine: HttpClientEngine = provideEngine()) {
             json(Json)
         }
         defaultRequest {
-            host = SERVICE_URL
-            port = 8088
+            url(BASE_URL)
         }
     }
 
@@ -27,4 +26,4 @@ class SeatRepository (engine: HttpClientEngine = provideEngine()) {
     }
 }
 
-val SERVICE_URL = "https://f1seats.schwaab.xyz"
+private const val BASE_URL = "https://f1seats.schwaab.xyz"
