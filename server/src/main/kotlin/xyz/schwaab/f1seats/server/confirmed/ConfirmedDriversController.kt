@@ -64,6 +64,10 @@ class ConfirmedDriversController(baseUrl: String) {
                 Driver(
                     name = "Lando Norris",
                     photoUrl = driverPicture("norris.png")
+                ),
+                Driver(
+                    name = "Oscar Piastri",
+                    photoUrl = driverPicture("piastri.png")
                 )
             )
         ),
