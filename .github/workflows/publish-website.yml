@@ -1,0 +1,37 @@
+name: "Publish Server Image"
+
+on:
+  push:
+    branches:
+      - 'main' # Publish on main update
+
+jobs:
+  gradle-run-tests:
+    runs-on: ubuntu-22.04
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+        with:
+          fetch-depth: 0
+
+      - name: Setup Gradle
+        uses: gradle/gradle-build-action@v2
+
+      - name: Test JVM
+        run: ./gradlew jsTest
+
+      - name: Build Website Files
+        run: ./gradlew jsBrowserDistribution
+
+      - name: Deploy Website
+        uses: JamesIves/github-pages-deploy-action@v4
+        with:
+          folder: web/build/distributions
+          branch: gh-pages
+
+      - name: Cleanup Gradle Cache
+        # Remove some files from the Gradle cache, so they aren't cached by GitHub Actions.
+        # Restoring these files from a GitHub Actions cache might cause problems for future builds.
+        run: |
+          rm -f ~/.gradle/caches/modules-2/modules-2.lock
+          rm -f ~/.gradle/caches/modules-2/gc.properties
