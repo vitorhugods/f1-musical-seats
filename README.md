@@ -8,6 +8,7 @@ See who's in and who's out of Formula 1 next year.
 
 ## [Web](https://github.com/vitorhugods/f1-musical-seats/tree/main/web)
 The Website, available at https://vitorhugods.github.io/f1-musical-seats/.
+Built using Compose for Web.
 
 It is deployed automatically on GitHub pages when the `main` branch is updated.
 
@@ -19,9 +20,11 @@ The server will eventually upate automatically using [Watchtower](https://github
 
 ## [Server](https://github.com/vitorhugods/f1-musical-seats/tree/main/server)
 The server, serving the API available on `https://f1seats.schwaab.xyz`. Currently, only [GET /confirmed-drivers](https://f1seats.schwaab.xyz/confirmed-drivers) exists.
+Built using Ktor-server.
 
 ## [Shared-Clients](https://github.com/vitorhugods/f1-musical-seats/tree/main/shared-clients)
 The client logic. At the moment it consumes the API mentioned above and nothing else.
+Built using Ktor-client.
 
 ## [Android](https://github.com/vitorhugods/f1-musical-seats/tree/main/android)
 _TO-DO_. As an Android Developer, this is the least exciting part, so I'm leaving it for last :)
