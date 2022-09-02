@@ -35,6 +35,7 @@ kotlin {
                 implementation(project(":shared-clients"))
                 implementation(compose.web.core)
                 implementation(compose.runtime)
+                implementation(libs.kotlin.css)
             }
         }
         val jsTest by getting {

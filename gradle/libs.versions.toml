@@ -13,6 +13,8 @@ kotlinx-serialization = "1.4.0"
 # Android
 android-compose-compiler = "1.3.0"
 android-material = "1.6.1"
+# React
+kotlin-css = "1.0.0-pre.381"
 
 [libraries]
 kotlin-gradle-plugin = { module = "org.jetbrains.kotlin:kotlin-gradle-plugin", version.ref = "kotlin"}
@@ -20,6 +22,9 @@ android-gradle-plugin = { module = "com.android.tools.build:gradle", version.ref
 kotlinx-serialization-plugin = { module = "org.jetbrains.kotlin:kotlin-serialization", version.ref = "kotlin"}
 kotlinx-serialization = { module = "org.jetbrains.kotlinx:kotlinx-serialization-json", version.ref = "kotlinx-serialization"}
 compose-jb-plugin = { module = "org.jetbrains.compose:compose-gradle-plugin", version.ref = "compose-jb"}
+
+# Web
+kotlin-css = { module = "org.jetbrains.kotlin-wrappers:kotlin-css", version.ref = "kotlin-css"}
 
 coroutines = { module = "org.jetbrains.kotlinx:kotlinx-coroutines-core", version.ref = "coroutines"}
 
